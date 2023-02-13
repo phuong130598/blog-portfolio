@@ -1,0 +1,101 @@
+.title
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.navLink
+{
+    text-decoration: none;
+    color:black;
+}
+.navLinkBack
+{
+    text-decoration: none;
+    color:teal;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navLinkBack:hover
+{
+    text-decoration:underline;
+}
+.blogsBody
+{
+    padding: 10px;
+    margin:0 50px;
+    background-color: rgb(230,230,230);
+    box-shadow: 2px 2px 5px 2px #888888;
+}
+.blogsContent
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px; 
+}
+.blogsCard
+{
+    flex-basis: 37.5%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border: solid;
+    border-radius: 5px;
+    background-color: rgb(226,226,221);
+}
+.blogsCard:hover
+{
+    box-shadow: 2px 2px 5px 2px #888888;
+}
+
+/* blog page css */
+.blogRating
+{
+    position: relative;
+    width:100px;
+}
+.blogRatingText
+{
+    position: absolute;
+    left:35.5px;
+    top:40px;
+    font-weight: bold;
+}
+.blogContent
+{
+    display:flex;
+    align-items: center;
+}
+.blogsShow
+{
+    flex:7
+
+}
+.blogChild
+{
+    padding: 10px 0 ;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkboxBlog {
+    display: flex;
+    flex-direction: row;
+    padding: 3px 0;
+}
+.blogsFilter {
+    flex:1;
+    border: solid black 1px;
+    padding: 10px;
+}
+table
+{
+    width: 100%;
+    table-layout: fixed;
+    margin: 10px 0;
+}
+td:first-child
+{
+    width: 200px;
+}

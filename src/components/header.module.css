@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 5px 2px #888888;  
+}
+.title {
+    font-size: 25px;
+}
+.nav {
+    display:flex;
+}
+.navList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.navLink {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
