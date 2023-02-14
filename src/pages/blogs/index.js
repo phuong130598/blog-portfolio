@@ -15,11 +15,12 @@ const BlogsPage = ({data: {allWpPost: {edges},allWpCategory}}) =>
             </div>
             <div className={blogsContent}>
               <div className={blogsShow}>
-                {edges.filter((item) => search !== "" ? item.node.categories.nodes.name.includes(search):item).map((item) => {
+                {edges.filter((item) =>  search !== "" ? (item.node.categories.nodes[0].name == search|| item.node.categories.nodes[1].name == search):item).map((item) => {
                     const blog = item.node.blogMeta;
                     const slug = item.node.slug;
                     return (
                     <div className={blogsCard}>
+                      {item.node.categories.nodes.map((categorie) => <p>{categorie.name}</p>)}
                         <Link className={navLink} to={`/blogs/${slug}`}>
                             <p className={title} key={item.node.id}>{blog.title}</p>
                             <p>

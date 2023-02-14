@@ -19,11 +19,11 @@ const Contact = ({data:{wpPage:{aboutFields}}}) =>
                 <div>
                     <h3>Algemene info van IAMD:</h3>
                     <div>
-                        <h5>Adres:</h5>
+                        <h4>Adres:</h4>
                         <p>Komiteitstraat 46-52, 2170 Merksem, België</p>
                     </div>
                     <div>
-                        <h5>Telefoon:</h5>
+                        <h4>Telefoon:</h4>
                         <p>+32 3 375 50 11 (algemeen)</p>
                         <p>+32 3 375 50 14 (support)</p>
                     </div>
