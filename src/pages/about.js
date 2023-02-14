@@ -16,6 +16,18 @@ const Contact = ({data:{wpPage:{aboutFields}}}) =>
                     <h3>Over mijn stage:</h3>
                     <p>{aboutFields.aboutIntern}</p>
                 </div>
+                <div>
+                    <h3>Algemene info van IAMD:</h3>
+                    <div>
+                        <h5>Adres:</h5>
+                        <p>Komiteitstraat 46-52, 2170 Merksem, België</p>
+                    </div>
+                    <div>
+                        <h5>Telefoon:</h5>
+                        <p>+32 3 375 50 11 (algemeen)</p>
+                        <p>+32 3 375 50 14 (support)</p>
+                    </div>
+                </div>
             </div>
         </Layout>
     )

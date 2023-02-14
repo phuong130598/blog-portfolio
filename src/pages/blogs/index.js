@@ -15,7 +15,7 @@ const BlogsPage = ({data: {allWpPost: {edges},allWpCategory}}) =>
             </div>
             <div className={blogsContent}>
               <div className={blogsShow}>
-                {edges.filter((item) => search !== "" ? item.node.categories.nodes[0].name === search:item).map((item) => {
+                {edges.filter((item) => search !== "" ? item.node.categories.nodes.name.includes(search):item).map((item) => {
                     const blog = item.node.blogMeta;
                     const slug = item.node.slug;
                     return (
