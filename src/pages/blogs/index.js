@@ -20,7 +20,6 @@ const BlogsPage = ({data: {allWpPost: {edges},allWpCategory}}) =>
                     const slug = item.node.slug;
                     return (
                     <div className={blogsCard}>
-                      {item.node.categories.nodes.map((categorie) => <p>{categorie.name}</p>)}
                         <Link className={navLink} to={`/blogs/${slug}`}>
                             <p className={title} key={item.node.id}>{blog.title}</p>
                             <p>
