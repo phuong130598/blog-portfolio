@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://phuong.jharaba.eu/graphql",
+        url: "https://phuong.jharaba.eu/graphql",
       },
     },
   ],
