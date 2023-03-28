@@ -18,7 +18,7 @@ const IndexPage = ({data:{wpPage:{landingFields}}}) => {
           <h1 style={{margin:"25px"}}>Nieuwste blogs:</h1>
           <div className={games}>
             {newestBlogs.map((blog) =>
-            <Link className={navLink} to={`/blogs/${slug}`}>
+            <Link className={navLink} to={`/blogs/${blog.slug}`}>
               <div className={newBlogs}>
                 <h1>{blog.blogMeta.title}</h1>
                 <p>{blog.blogMeta.description}</p>
